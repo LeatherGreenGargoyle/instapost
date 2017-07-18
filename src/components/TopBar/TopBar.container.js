@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-// import TopBar from './TopBar.component'
 import { avatarUrl } from '../../constants'
 import './TopBar.style.css'
 
