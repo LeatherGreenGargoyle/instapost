@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 
 class FeedContainer extends React.Component {
@@ -19,4 +21,10 @@ class FeedContainer extends React.Component {
   }
 }
 
-export default FeedContainer
+FeedContainer.propTypes = {
+  posts: PropTypes.array.isRequired,
+}
+
+const mapStateToProps = state => ({ posts: state.posts })
+
+export default connect(mapStateToProps)(FeedContainer)
