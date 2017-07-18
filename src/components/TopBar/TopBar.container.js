@@ -22,7 +22,7 @@ class TopBarContainer extends React.Component {
           {this.props.username}
         </span>
         <span className="ellipsis">
-          . . .
+          ...
         </span>
       </div>
     )
