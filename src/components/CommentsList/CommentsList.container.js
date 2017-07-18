@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import FontAwesome from 'react-fontawesome'
+import './CommentsList.style.css'
 
 class CommentsListContainer extends React.Component {
   constructor(props) {
@@ -9,11 +11,11 @@ class CommentsListContainer extends React.Component {
 
   render() {
     return (
-      <div>
-        <span>Comments</span>
-        <span>
-          <Link to="/">To Feed</Link>
-        </span>
+      <div className="CommentsList">
+        <div className="CommentsTopBar">
+          <Link to="/"><FontAwesome name="angle-left" size="2x" /></Link>
+          <span className="CommentsHeader">Comments</span>
+        </div>
       </div>
     )
   }

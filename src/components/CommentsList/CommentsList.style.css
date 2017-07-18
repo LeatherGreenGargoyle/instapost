@@ -1,0 +1,17 @@
+.CommentsList {
+  border: 1px solid black;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 1em;
+  width: 45em;
+}
+
+.CommentsHeader {
+  font-size: 1.5em;
+  margin-left: 12em;
+}
+
+.CommentsTopBar {
+  padding-bottom: 1em;
+  border-bottom: 1px solid grey;
+}
