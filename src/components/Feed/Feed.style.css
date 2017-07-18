@@ -1,6 +1,24 @@
+.appBar {
+  border-bottom: 1px solid #cccccc;
+  padding: 1em;
+}
+
+.appTitle {
+  font-size: 2em;
+  margin: 0em 4.3em;
+}
+
+.cameraIcon {
+
+}
+
 .feed {
   border: 1px solid black;
   margin: 0 auto;
   overflow: auto;
-  width: 35em;
+  width: 33em;
+}
+
+.messagesIcon {
+
 }

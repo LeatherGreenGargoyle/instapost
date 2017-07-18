@@ -11,9 +11,11 @@ class FeedContainer extends React.Component {
 
   render() {
     return (
-      <Feed
-        posts={this.props.posts}
-      />
+      <div>
+        <Feed
+          posts={this.props.posts}
+        />
+      </div>
     )
   }
 }
