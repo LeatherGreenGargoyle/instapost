@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { avatarUrl } from '../../constants'
 import './Comment.style.css'
 
@@ -16,5 +17,10 @@ const CommentContainer = ({ username, comment }) => (
     <div className="linebreak" />
   </div>
 )
+
+CommentContainer.propTypes = {
+  username: PropTypes.string.isRequired,
+  comment: PropTypes.string.isRequired,
+}
 
 export default CommentContainer

@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import FontAwesome from 'react-fontawesome'
 import { postComment } from '../../store/actions'
 import Comment from '../Comment'
+import CommentsList from './CommentsList.component'
 import './CommentsList.style.css'
 
 class CommentsListContainer extends React.Component {
@@ -23,40 +24,12 @@ class CommentsListContainer extends React.Component {
 
   render() {
     return (
-      <div className="CommentsListContainer">
-        <div className="CommentsTopBar">
-          <Link to="/">
-            <FontAwesome className="commentsBackIcon" name="angle-left" size="2x" />
-          </Link>
-          <span className="CommentsHeader">Comments</span>
-        </div>
-        <div className="commentsList">
-          {this.props.posts[0].comments.map(comment => (
-            <Comment
-              key={comment.id}
-              comment={comment.comment}
-              username={comment.name}
-            />
-          ))}
-        </div>
-        <form className="commentForm" onSubmit={this.handleCommentSubmit}>
-          <FontAwesome className="sendIcon" name='paper-plane-o' size="2x" />
-          <input
-            className="commentInputField"
-            type="text"
-            placeholder="Add a comment..."
-            onChange={this.handleCommentInput}
-            value={this.state.textInputBody}
-          /> 
-          {/* <input className="postCommentButton" type="submit" value="Post"/> */}
-          <span
-            className="postCommentButton"
-            onClick={this.handleCommentSubmit}
-          >
-            Post
-          </span>
-        </form>
-      </div>
+      <CommentsList
+        comments={this.props.posts[0].comments}
+        handleCommentSubmit={this.handleCommentSubmit}
+        handleCommentInput={this.handleCommentInput}
+        inputfieldValue={this.state.textInputBody}
+      />
     )
   }
 }
