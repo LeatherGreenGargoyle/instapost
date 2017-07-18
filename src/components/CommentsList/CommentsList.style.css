@@ -29,7 +29,7 @@
 
 .postCommentButton {
   font-size: 1.3em;
-  /* float: right; */
+  cursor: pointer;
   margin-left: 1em;
   border: none;
   background-color: white;

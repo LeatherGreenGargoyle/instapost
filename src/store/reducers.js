@@ -15,7 +15,7 @@ const posts = (state = data, { type, payload }) => {
 
 // payload will be {postIdx: num, commentObj: {id, name, comment}}
     case actionTypes.POST_COMMENT:
-      newState[payload.postIdx].comments.push(payload.commentObj)
+      newState[0].comments.push(payload)
       return newState
 
     default:

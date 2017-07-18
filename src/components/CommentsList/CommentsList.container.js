@@ -18,6 +18,7 @@ class CommentsListContainer extends React.Component {
   handleCommentSubmit = (e) => {
     e.preventDefault()
     this.props.postComment(this.state.textInputBody, 'defaultUser', this.props.posts[0].comments.length + 1)
+    this.setState({textInputBody: ''})
   }
 
   render() {
@@ -43,6 +44,7 @@ class CommentsListContainer extends React.Component {
             type="text"
             placeholder="Add a comment..."
             onChange={this.handleCommentInput}
+            value={this.state.textInputBody}
           /> 
           {/* <input className="postCommentButton" type="submit" value="Post"/> */}
           <span
