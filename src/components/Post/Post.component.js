@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 import TopBar from '../TopBar'
 import Photo from '../Photo'
 import ButtonBar from '../ButtonBar'
@@ -19,6 +20,15 @@ const Post = ({ postIdx, postObj }) => (
       postIdx={postIdx}
       postLikes={postObj.likes}
     />
+    <div className="caption">
+      <span className="captionUsername">{postObj.user.name}</span>
+      <span className="captionCommentClip">
+        {postObj.comments[0].comment} ...
+      </span>
+      <span>
+        <Link to="/comments"><span className="moreCommentsLink">more</span></Link>
+      </span>
+    </div>
   </div>
 )
 
@@ -28,3 +38,4 @@ Post.propTypes = {
 }
 
 export default Post
+

@@ -1,3 +1,22 @@
+.caption {
+  margin: 0 1em;
+}
+
+.captionCommentClip {
+  margin: 0 .25em;
+}
+
+.captionUsername {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-right: 0.25em;
+}
+
+.moreCommentsLink {
+  color: grey;
+  text-decoration: none;
+}
+
 .post {
   height: 40em;
   margin: 2em 0em;
