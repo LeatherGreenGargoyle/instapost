@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import { Link } from 'react-router-dom'
+import Feed from './Feed.component'
 
 class FeedContainer extends React.Component {
   constructor(props) {
@@ -11,12 +11,9 @@ class FeedContainer extends React.Component {
 
   render() {
     return (
-      <div>
-        <span>Feed</span>
-        <span>
-          <Link to="/comments">To Comments</Link>
-        </span>
-      </div>
+      <Feed
+        posts={this.props.posts}
+      />
     )
   }
 }
