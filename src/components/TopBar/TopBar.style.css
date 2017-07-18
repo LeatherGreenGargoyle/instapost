@@ -1,0 +1,18 @@
+.ellipsis {
+  float: right;
+}
+
+.topBar {
+  height: 10%;
+  overflow: auto;
+}
+
+.userAvatar {
+  float: left; 
+  height: 1.5em;
+  margin-right: .5em;
+}
+
+.username {
+  float: left;
+}

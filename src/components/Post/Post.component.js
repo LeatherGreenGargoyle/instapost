@@ -1,9 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import TopBar from '../TopBar'
 
 const Post = ({ postObj }) => (
   <div>
-    {postObj.user.name}
+    <TopBar
+      username={postObj.user.name}
+      userAvatar={'default_avatar.png'}
+    />
   </div>
 )
 

@@ -1,5 +1,7 @@
 .feed {
   border: 1px solid black;
   margin: 0 auto;
+  overflow: auto;
+  padding: 1em;
   width: 65%;
 }

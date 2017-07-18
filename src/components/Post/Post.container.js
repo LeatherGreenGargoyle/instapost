@@ -10,7 +10,7 @@ class PostContainer extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="post">
         <Post postObj={this.props.postObj} />
       </div>
     )
