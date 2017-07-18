@@ -25,7 +25,9 @@ class CommentsListContainer extends React.Component {
     return (
       <div className="CommentsListContainer">
         <div className="CommentsTopBar">
-          <Link to="/"><FontAwesome name="angle-left" size="2x" /></Link>
+          <Link to="/">
+            <FontAwesome className="commentsBackIcon" name="angle-left" size="2x" />
+          </Link>
           <span className="CommentsHeader">Comments</span>
         </div>
         <div className="commentsList">

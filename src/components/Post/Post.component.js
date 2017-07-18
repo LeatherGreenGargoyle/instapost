@@ -26,7 +26,9 @@ const Post = ({ postIdx, postObj }) => (
         {postObj.comments[0].comment} ...
       </span>
       <span>
-        <Link to="/comments"><span className="moreCommentsLink">more</span></Link>
+        <Link to="/comments" style={{ textDecoration: 'none' }}>
+          <span className="moreCommentsLink">more</span>
+        </Link>
       </span>
     </div>
   </div>

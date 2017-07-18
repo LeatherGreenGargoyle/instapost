@@ -10,8 +10,10 @@
 }
 
 .commentIcon {
+  color: black;
   font-size: 20;
-  margin: 0 1.3em;
+  margin: 0 1em;
+  text-decoration: none;
 }
 
 .likes {

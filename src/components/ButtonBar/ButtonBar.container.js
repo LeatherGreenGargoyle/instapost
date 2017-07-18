@@ -17,11 +17,9 @@ class ButtonBarContainer extends React.Component {
         <HeartButton
           postIdx={this.props.postIdx}
         />
-        <span className="commentIcon" >
-          <Link to="/comments">
-            <FontAwesome name="comment-o" size="2x" />
-          </Link>
-        </span>
+        <Link to="/comments">
+          <FontAwesome className="commentIcon" name="comment-o" size="2x" />
+        </Link>
         <FontAwesome name='paper-plane-o' size="2x" />
         <span className="bookmarkIcon">
           <FontAwesome name="bookmark-o" size="2x" />
