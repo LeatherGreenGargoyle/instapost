@@ -1,6 +1,5 @@
 export const actionTypes = {
   LIKE_ACTION: 'LIKE_ACTION',
-  SET_CURR_POST: 'SET_CURR_POST',
   POST_COMMENT: 'POST_COMMENT',
 }
 
