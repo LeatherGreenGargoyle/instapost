@@ -1,9 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Post from '../Post'
 
 const Feed = ({ posts }) => (
   <div>
-    {posts[0].user.name}
+    {posts.map(post => <Post postObj={post} />)}
   </div>
 )
 
