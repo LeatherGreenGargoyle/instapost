@@ -1,7 +1,7 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import Feed from './components/Feed'
-import CommentsList from './components/CommentsList'
+import Feed from '../Feed'
+import CommentsList from '../CommentsList'
 import './App.css'
 
 const App = () => (
