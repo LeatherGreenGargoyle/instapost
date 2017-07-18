@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import FontAwesome from 'react-fontawesome'
 import { postComment } from '../../store/actions'
+import Comment from '../Comment'
 import './CommentsList.style.css'
 
 class CommentsListContainer extends React.Component {
@@ -15,10 +16,19 @@ class CommentsListContainer extends React.Component {
 
   render() {
     return (
-      <div className="CommentsList">
+      <div className="CommentsListContainer">
         <div className="CommentsTopBar">
           <Link to="/"><FontAwesome name="angle-left" size="2x" /></Link>
           <span className="CommentsHeader">Comments</span>
+        </div>
+        <div className="commentsList">
+          {this.props.posts[0].comments.map(comment => (
+            <Comment
+              key={comment.id}
+              comment={comment.comment}
+              username={comment.name}
+            />
+          ))}
         </div>
       </div>
     )

@@ -1,0 +1,27 @@
+.CommentContainer {
+  padding: 1em 0em;
+}
+
+.linebreak {
+  clear: both;
+  border-bottom: 1px solid grey;
+  margin-left: 3em;
+  padding: 0.2em 0em;
+}
+
+.username {
+  font-size: 1em;
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+
+.usernameCommentBlock {
+  overflow: hidden;
+}
+
+
+.userAvatar {
+  float: left;
+  height: 2em;
+  margin: 0em 1em;
+}
