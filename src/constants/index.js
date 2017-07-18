@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 export const actionTypes = {
   LIKE_ACTION: 'LIKE_ACTION',
   POST_COMMENT: 'POST_COMMENT',

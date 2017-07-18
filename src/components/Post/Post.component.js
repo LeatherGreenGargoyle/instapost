@@ -2,10 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import TopBar from '../TopBar'
 import Photo from '../Photo'
+import ButtonBar from '../ButtonBar'
 import { postUrl } from '../../constants'
 import './Post.style.css'
 
-const Post = ({ postObj }) => (
+const Post = ({ postIdx, postObj }) => (
   <div className="post">
     <TopBar
       username={postObj.user.name}
@@ -14,10 +15,14 @@ const Post = ({ postObj }) => (
     <Photo
       photoPath={postUrl}
     />
+    <ButtonBar
+      postIdx={postIdx}
+    />
   </div>
 )
 
 Post.propTypes = {
+  postIdx: PropTypes.number.isRequired,
   postObj: PropTypes.object.isRequired,
 }
 

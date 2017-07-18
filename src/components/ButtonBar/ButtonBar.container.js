@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import './ButtonBar.style.css'
+import HeartButton from '../HeartButton'
 
 class ButtonBarContainer extends React.Component {
   constructor(props) {
@@ -9,17 +10,18 @@ class ButtonBarContainer extends React.Component {
   }
 
   render() {
-
     return (
       <div className="ButtonBar">
+        <HeartButton
+          postIdx={this.props.postIdx}
+        />
       </div>
     )
   }
 }
 
 ButtonBarContainer.propTypes = {
-  username: PropTypes.string.isRequired,
-  userAvatar: PropTypes.string.isRequired,
+  postIdx: PropTypes.number.isRequired,
 }
 
 export default ButtonBarContainer

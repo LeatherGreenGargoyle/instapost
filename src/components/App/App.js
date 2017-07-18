@@ -5,7 +5,7 @@ import CommentsList from '../CommentsList'
 import './App.css'
 
 const App = () => (
-  <div className='App'>
+  <div className="App">
     <Switch>
       <Route exact path="/" component={Feed} />
       <Route path="/comments" component={CommentsList} />

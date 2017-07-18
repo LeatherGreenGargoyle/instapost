@@ -10,14 +10,16 @@ class PostContainer extends React.Component {
 
   render() {
     return (
-      <div className="post">
-        <Post postObj={this.props.postObj} />
-      </div>
+        <Post
+          postObj={this.props.postObj}
+          postIdx={this.props.postIdx}
+        />
     )
   }
 }
 
 PostContainer.propTypes = {
+  postIdx: PropTypes.number.isRequired,
   postObj: PropTypes.object.isRequired,
 }
 

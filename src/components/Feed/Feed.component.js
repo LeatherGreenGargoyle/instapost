@@ -5,7 +5,7 @@ import './Feed.style.css'
 
 const Feed = ({ posts }) => (
   <div className="feed">
-    {posts.map(post => <Post postObj={post} />)}
+    {posts.map((post, i) => <Post key={i} postObj={post} postIdx={i} />)}
   </div>
 )
 
