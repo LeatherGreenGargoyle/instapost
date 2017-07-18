@@ -17,6 +17,7 @@ const Post = ({ postIdx, postObj }) => (
     />
     <ButtonBar
       postIdx={postIdx}
+      postLikes={postObj.likes}
     />
   </div>
 )

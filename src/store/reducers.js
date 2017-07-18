@@ -5,7 +5,7 @@ const posts = (state = data, { type, payload }) => {
   const newState = [...state]
   switch (type) {
  // payload will be {postIdx: num, like: bool}
-    case actionTypes.LIKE_PHOTO:
+    case actionTypes.LIKE_ACTION:
       if (payload.like) {
         newState[payload.postIdx].likes++
       } else {

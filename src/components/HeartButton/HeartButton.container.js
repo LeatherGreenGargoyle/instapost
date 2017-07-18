@@ -19,10 +19,12 @@ class HeartButtonContainer extends React.Component {
   }
 
   render() {
+    const heartColor = this.state.liked ? {'color': 'red'} : {'color': 'black'}
     return (
       <span
         className="HeartButton"
-        onClick={() => console.log('click')}
+        style={heartColor}
+        onClick={this.handleLikeAction}
         >
       <FontAwesome
         className="hearticon"
@@ -38,8 +40,10 @@ HeartButtonContainer.propTypes = {
   postIdx: PropTypes.number.isRequired,
 }
 
+const mapStateToProps = state => ({})
+
 const mapDispatchToProps = dispatch => ({
   likeAction: (postIdx, likeBool) => dispatch(likeAction(postIdx, likeBool)),
 })
 
-export default connect(mapDispatchToProps)(HeartButtonContainer)
+export default connect(mapStateToProps, mapDispatchToProps)(HeartButtonContainer)

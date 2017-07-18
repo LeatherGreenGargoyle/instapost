@@ -5,14 +5,14 @@
 .topBar {
   height: 5em;
   overflow: auto;
+  margin-bottom: 1em;
 }
 
 .userAvatar {
-  float: left; 
   height: 1.5em;
   margin-right: .5em;
 }
 
 .username {
-  float: left;
+  margin-bottom: 1em;
 }

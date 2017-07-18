@@ -15,6 +15,9 @@ class ButtonBarContainer extends React.Component {
         <HeartButton
           postIdx={this.props.postIdx}
         />
+        <div className="likes">
+          {this.props.postLikes} Likes
+        </div>
       </div>
     )
   }
@@ -22,6 +25,7 @@ class ButtonBarContainer extends React.Component {
 
 ButtonBarContainer.propTypes = {
   postIdx: PropTypes.number.isRequired,
+  postLikes: PropTypes.number.isRequired,
 }
 
 export default ButtonBarContainer

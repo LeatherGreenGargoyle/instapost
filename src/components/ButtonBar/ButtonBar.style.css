@@ -2,3 +2,7 @@
   height: 5em;
   overflow: auto;
 }
+
+.likes {
+  clear: both;
+}
