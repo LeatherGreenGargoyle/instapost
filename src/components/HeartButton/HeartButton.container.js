@@ -20,6 +20,7 @@ class HeartButtonContainer extends React.Component {
 
   render() {
     const heartColor = this.state.liked ? {'color': 'red'} : {'color': 'black'}
+    const heartStyle = this.state.liked ? 'heart' : 'heart-o'
     return (
       <span
         className="HeartButton"
@@ -27,8 +28,8 @@ class HeartButtonContainer extends React.Component {
         onClick={this.handleLikeAction}
         >
       <FontAwesome
-        className="hearticon"
-        name='heart'
+        name={heartStyle}
+        size="2x"
       />
       </span>
     )

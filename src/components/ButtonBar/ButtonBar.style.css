@@ -1,8 +1,20 @@
+.bookmarkIcon {
+  float: right;
+}
+
 .ButtonBar {
   height: 5em;
+  margin-top: 0.5em;
   overflow: auto;
+}
+
+.commentIcon {
+  font-size: 20;
+  margin: 0 0.5em;
 }
 
 .likes {
   clear: both;
+  margin-left: 0.5em;
+  margin-top: 0.5em;
 }

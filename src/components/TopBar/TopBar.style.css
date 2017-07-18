@@ -1,5 +1,7 @@
 .ellipsis {
   float: right;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 .topBar {
@@ -9,10 +11,11 @@
 }
 
 .userAvatar {
-  height: 1.5em;
+  height: 2em;
   margin-right: .5em;
 }
 
 .username {
-  margin-bottom: 1em;
+  display: inline-block;
+  font-size: 1em;
 }
