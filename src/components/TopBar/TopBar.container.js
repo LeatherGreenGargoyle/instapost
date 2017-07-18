@@ -10,7 +10,6 @@ class TopBarContainer extends React.Component {
   }
 
   render() {
-
     return (
       <div className="TopBar">
         <img
@@ -18,9 +17,9 @@ class TopBarContainer extends React.Component {
           alt="Poster Avatar"
           className="userAvatar"
         />
-        <span className="username">
+        <div className="usernameContainer">
           {this.props.username}
-        </span>
+        </div>
         <span className="ellipsis">
           ...
         </span>

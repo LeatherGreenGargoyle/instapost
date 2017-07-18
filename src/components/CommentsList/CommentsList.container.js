@@ -14,6 +14,12 @@ class CommentsListContainer extends React.Component {
     }
   }
 
+  handleCommentInput = (e) => this.setState({textInputBody: e.target.value}) 
+  handleCommentSubmit = (e) => {
+    e.preventDefault()
+    this.props.postComment(this.state.textInputBody, 'defaultUser', this.props.posts[0].comments.length + 1)
+  }
+
   render() {
     return (
       <div className="CommentsListContainer">
@@ -30,6 +36,22 @@ class CommentsListContainer extends React.Component {
             />
           ))}
         </div>
+        <form className="commentForm" onSubmit={this.handleCommentSubmit}>
+          <FontAwesome className="sendIcon" name='paper-plane-o' size="2x" />
+          <input
+            className="commentInputField"
+            type="text"
+            placeholder="Add a comment..."
+            onChange={this.handleCommentInput}
+          /> 
+          {/* <input className="postCommentButton" type="submit" value="Post"/> */}
+          <span
+            className="postCommentButton"
+            onClick={this.handleCommentSubmit}
+          >
+            Post
+          </span>
+        </form>
       </div>
     )
   }

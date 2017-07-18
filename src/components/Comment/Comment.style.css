@@ -4,7 +4,7 @@
 
 .linebreak {
   clear: both;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #cccccc;
   margin-left: 3em;
   padding: 0.2em 0em;
 }

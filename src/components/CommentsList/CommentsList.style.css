@@ -6,12 +6,36 @@
   width: 35em;
 }
 
+.commentForm {
+  margin-left: 1em;
+}
+
 .CommentsHeader {
   font-size: 1.5em;
   margin-left: 10em;
 }
 
+.commentInputField {
+  border: none;
+  font-size: 1em;
+  margin: 0em 1em;
+  width: 25em;
+}
+
 .CommentsTopBar {
   padding-bottom: 1em;
   border-bottom: 1px solid grey;
+}
+
+.postCommentButton {
+  font-size: 1.3em;
+  /* float: right; */
+  margin-left: 1em;
+  border: none;
+  background-color: white;
+  color: #b3d9ff;
+}
+
+.sendIcon {
+  color: #cccccc;
 }
