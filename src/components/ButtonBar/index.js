@@ -1,3 +1,3 @@
-import ButtonBarContainer from './ButtonBar.container'
+import ButtonBar from './ButtonBar'
 
-export default ButtonBarContainer
+export default ButtonBar

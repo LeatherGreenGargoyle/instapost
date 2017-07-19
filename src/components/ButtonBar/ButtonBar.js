@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import './ButtonBar.style.css'
 import HeartButton from '../HeartButton'
 
-const ButtonBarContainer = ({ postIdx, postLiked, postLikes }) => (
+const ButtonBar = ({ postIdx, postLiked, postLikes }) => (
   <div className="ButtonBar">
     <HeartButton
       postIdx={postIdx}
@@ -24,10 +24,10 @@ const ButtonBarContainer = ({ postIdx, postLiked, postLikes }) => (
   </div>
 )
 
-ButtonBarContainer.propTypes = {
+ButtonBar.propTypes = {
   postIdx: PropTypes.number.isRequired,
   postLiked: PropTypes.bool.isRequired,
   postLikes: PropTypes.number.isRequired,
 }
 
-export default ButtonBarContainer
+export default ButtonBar
