@@ -26,9 +26,11 @@ const CommentsList = ({ comments, handleCommentInput, handleCommentSubmit, input
     </div>
 
     <form className="commentForm" onSubmit={handleCommentSubmit}>
-      <FontAwesome className="sendIcon" name='paper-plane-o' size="2x" />
+      <div className="sendIcon">
+        <FontAwesome name='paper-plane-o' size="2x" />
+      </div>
 
-      <input
+      <textarea
         className="commentInputField"
         type="text"
         placeholder="Add a comment..."
@@ -36,12 +38,12 @@ const CommentsList = ({ comments, handleCommentInput, handleCommentSubmit, input
         value={inputfieldValue}
       />
 
-      <span
+      <div
         className="postCommentButton"
         onClick={handleCommentSubmit}
       >
         Post
-      </span>
+      </div>
 
     </form>
   </div>

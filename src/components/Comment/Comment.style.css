@@ -33,10 +33,6 @@
   transform: translateY(-17%);
 }
 
-.replyButton {
-
-}
-
 .username {
   font-size: 1em;
   font-weight: bold;
@@ -47,7 +43,6 @@
    overflow: hidden;
    width: 80%;
 }
-
 
 .userAvatar {
   float: left;
