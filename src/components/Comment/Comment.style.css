@@ -1,5 +1,6 @@
 .Comment {
   padding: 1em 0em;
+  position: relative;
 }
 
 .linebreak {
@@ -9,6 +10,14 @@
   padding: 0.2em 0em;
 }
 
+.heartCommentIcon {
+  color: #cccccc;
+  margin-left: 33em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .username {
   font-size: 1em;
   font-weight: bold;
@@ -16,7 +25,8 @@
 }
 
 .usernameCommentBlock {
-   overflow: hidden; 
+   overflow: hidden;
+   width: 80%;
 }
 
 
