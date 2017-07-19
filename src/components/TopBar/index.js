@@ -1,3 +1,3 @@
-import TopBarContainer from './TopBar.container'
+import TopBar from './TopBar'
 
-export default TopBarContainer
+export default TopBar

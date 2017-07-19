@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { avatarUrl } from '../../constants'
 import './TopBar.style.css'
 
-class TopBarContainer extends React.Component {
+class TopBar extends React.Component {
   constructor(props) {
     super(props)
     this.state = {}
@@ -28,9 +28,9 @@ class TopBarContainer extends React.Component {
   }
 }
 
-TopBarContainer.propTypes = {
+TopBar.propTypes = {
   username: PropTypes.string.isRequired,
   userAvatar: PropTypes.string.isRequired,
 }
 
-export default TopBarContainer
+export default TopBar

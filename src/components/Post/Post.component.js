@@ -13,14 +13,17 @@ const Post = ({ postIdx, postObj }) => (
       username={postObj.user.name}
       userAvatar={'default_avatar.png'}
     />
+
     <Photo
       photoPath={postUrl}
     />
+
     <ButtonBar
       postIdx={postIdx}
       postLikes={postObj.likes}
       postLiked={postObj.liked}
     />
+
     <div className="caption">
       <span className="captionUsername">{postObj.user.name}</span>
       <span className="captionCommentClip">
@@ -32,6 +35,7 @@ const Post = ({ postIdx, postObj }) => (
         </Link>
       </span>
     </div>
+
   </div>
 )
 
