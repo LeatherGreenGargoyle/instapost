@@ -8,19 +8,16 @@ import './HeartButton.style.css'
 class HeartButtonContainer extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {
-      liked: false,
-    }
+    this.state = {}
   }
 
   handleLikeAction = () => {
-    this.props.likeAction(this.props.postIdx, !this.state.liked)
-    this.setState({ liked: !this.state.liked} )
+    this.props.likeAction(this.props.postIdx, !this.props.postLiked)
   }
 
   render() {
-    const heartColor = this.state.liked ? {'color': 'red'} : {'color': 'black'}
-    const heartStyle = this.state.liked ? 'heart' : 'heart-o'
+    const heartColor = this.props.postLiked ? {'color': 'red'} : {'color': 'black'}
+    const heartStyle = this.props.postLiked ? 'heart' : 'heart-o'
     return (
       <span
         className="HeartButton"
@@ -39,6 +36,7 @@ class HeartButtonContainer extends React.Component {
 HeartButtonContainer.propTypes = {
   likeAction: PropTypes.func.isRequired,
   postIdx: PropTypes.number.isRequired,
+  postLiked: PropTypes.bool.isRequired,
 }
 
 const mapStateToProps = state => ({})

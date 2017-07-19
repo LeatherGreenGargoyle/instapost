@@ -5,10 +5,11 @@ import { Link } from 'react-router-dom'
 import './ButtonBar.style.css'
 import HeartButton from '../HeartButton'
 
-const ButtonBarContainer = ({ postIdx, postLikes }) => (
+const ButtonBarContainer = ({ postIdx, postLiked, postLikes }) => (
   <div className="ButtonBar">
     <HeartButton
       postIdx={postIdx}
+      postLiked={postLiked}
     />
     <Link to="/comments">
       <FontAwesome className="commentIcon" name="comment-o" size="2x" />
@@ -25,6 +26,7 @@ const ButtonBarContainer = ({ postIdx, postLikes }) => (
 
 ButtonBarContainer.propTypes = {
   postIdx: PropTypes.number.isRequired,
+  postLiked: PropTypes.bool.isRequired,
   postLikes: PropTypes.number.isRequired,
 }
 

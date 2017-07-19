@@ -8,8 +8,10 @@ const posts = (state = data, { type, payload }) => {
     case actionTypes.LIKE_ACTION:
       if (payload.like) {
         newState[payload.postIdx].likes++
+        newState[payload.postIdx].liked = true
       } else {
         newState[payload.postIdx].likes--
+        newState[payload.postIdx].liked = false
       }
       return newState
 

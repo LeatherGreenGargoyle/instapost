@@ -14,6 +14,7 @@ export const data = [
     },
     "image": "hackathon.jpg",
     "likes": 34,
+    "liked": false,
     "comments": [
       {
         "id": 1,
