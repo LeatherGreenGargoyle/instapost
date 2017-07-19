@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import FontAwesome from 'react-fontawesome'
 import { likeAction } from '../../store/actions'
-import './HeartButton.style.css'
+import HeartButton from './HeartButton.component'
 
 class HeartButtonContainer extends React.Component {
   constructor(props) {
@@ -19,16 +19,11 @@ class HeartButtonContainer extends React.Component {
     const heartColor = this.props.postLiked ? {'color': 'red'} : {'color': 'black'}
     const heartStyle = this.props.postLiked ? 'heart' : 'heart-o'
     return (
-      <span
-        className="HeartButton"
-        style={heartColor}
-        onClick={this.handleLikeAction}
-        >
-      <FontAwesome
-        name={heartStyle}
-        size="2x"
+      <HeartButton
+        handleLikeAction={this.handleLikeAction}
+        heartColor={heartColor}
+        heartStyle={heartStyle}
       />
-      </span>
     )
   }
 }
