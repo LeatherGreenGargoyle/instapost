@@ -1,3 +1,3 @@
-import PhotoContainer from './Photo.container'
+import Photo from './Photo'
 
-export default PhotoContainer
+export default Photo

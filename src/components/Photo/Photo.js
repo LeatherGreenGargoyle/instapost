@@ -1,7 +1,7 @@
 import React from 'react'
 import './Photo.style.css'
 
-const PhotoContainer = ({ photoPath }) => (
+const Photo = ({ photoPath }) => (
   <div className="photoContainer">
     <img
       src={photoPath}
@@ -11,4 +11,4 @@ const PhotoContainer = ({ photoPath }) => (
   </div>
 )
 
-export default PhotoContainer
+export default Photo
