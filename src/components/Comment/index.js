@@ -1,3 +1,3 @@
-import CommentContainer from './Comment.container'
+import Comment from './Comment'
 
-export default CommentContainer
+export default Comment

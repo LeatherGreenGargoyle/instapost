@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import { avatarUrl } from '../../constants'
 import './Comment.style.css'
 
-const CommentContainer = ({ username, comment }) => (
-  <div className="CommentContainer">
+const Comment = ({ username, comment }) => (
+  <div className="Comment">
     <img
       src={avatarUrl}
       alt="Poster Avatar"
@@ -18,9 +18,9 @@ const CommentContainer = ({ username, comment }) => (
   </div>
 )
 
-CommentContainer.propTypes = {
+Comment.propTypes = {
   username: PropTypes.string.isRequired,
   comment: PropTypes.string.isRequired,
 }
 
-export default CommentContainer
+export default Comment
