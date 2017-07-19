@@ -3,6 +3,21 @@
   position: relative;
 }
 
+.commentAge {
+  margin-left: 5em;
+}
+
+.commentFooter {
+  clear: both;
+  color: #cccccc;
+  font-size: .9em;  
+  margin-top: .5em;
+}
+
+.commentLikes {
+  margin: 0em 1em;
+}
+
 .linebreak {
   clear: both;
   border-bottom: 1px solid #cccccc;
@@ -12,10 +27,14 @@
 
 .heartCommentIcon {
   color: #cccccc;
-  margin-left: 33em;
+  margin-left: 31em;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 17%;
+  transform: translateY(-17%);
+}
+
+.replyButton {
+
 }
 
 .username {

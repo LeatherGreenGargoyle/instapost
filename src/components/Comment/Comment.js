@@ -20,6 +20,11 @@ const Comment = ({ username, comment }) => (
         name="heart-o"
       />
     </div>
+    <div className="commentFooter">
+      <span className="commentAge">3d</span>
+      <span className="commentLikes">1 like</span>
+      <span className="replyButton">Reply</span>
+    </div>
     <div className="linebreak" />
   </div>
 )

@@ -8,7 +8,7 @@
   margin: 0 auto;
   overflow: auto;
   padding: 1em;
-  width: 35em;
+  width: 33em;
 }
 
 .commentForm {
@@ -17,7 +17,7 @@
 
 .CommentsHeader {
   font-size: 1.5em;
-  margin-left: 10em;
+  margin-left: 8em;
 }
 
 .commentInputField {
@@ -35,7 +35,7 @@
 .postCommentButton {
   font-size: 1.3em;
   cursor: pointer;
-  margin-left: 1em;
+  margin-left: -1em;
   border: none;
   background-color: white;
   color: #b3d9ff;
