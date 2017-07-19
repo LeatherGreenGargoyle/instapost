@@ -1,5 +1,6 @@
 .commentsBackIcon {
   color: black;
+  margin-left: 0.5em;
   text-decoration: none;
 }
 
@@ -7,20 +8,24 @@
   border: 1px solid black;
   margin: 0 auto;
   overflow: auto;
-  padding-left: 1em;
-  padding-right: 1em;
   padding-top: 1em;
-  width: 33em;
+  width: 31em;
 }
 
 .commentForm {
-  margin-left: 1em;
+  border-top: 1px solid #cccccc;
+  margin-top: 7em;
+  padding-top: 0.5em;
   position: relative;
 }
 
 .CommentsHeader {
   font-size: 1.5em;
-  margin-left: 8em;
+  margin-left: 7em;
+}
+
+.commentInputContainer {
+  margin-top: 0.5em;
 }
 
 .commentInputField {
@@ -28,10 +33,12 @@
   font-size: 1em;
   margin: 0em 1em;
   outline: none;
-  width: 25em;
+  resize: none;
+  width: 23em;
 }
 
 .CommentsTopBar {
+  margin-bottom: 0.5em;
   padding-bottom: 1em;
   border-bottom: 1px solid grey;
 }
@@ -42,13 +49,14 @@
   color: #b3d9ff;
   cursor: pointer;
   font-size: 1.3em;
-  margin-left: 22em;
+  margin-left: 20.5em;
   position: absolute; 
-  top: 0%;
-  transform: translateY(0%);  
+  top: 20%;
+  transform: translateY(20%);  
 }
 
 .sendIcon {
   color: #cccccc;
   float: left;
+  margin-left: 1em;
 }

@@ -1,5 +1,5 @@
 .Comment {
-  padding: 1em 0em;
+  padding: 0.5em 0em;
   position: relative;
 }
 
@@ -11,7 +11,8 @@
   clear: both;
   color: #cccccc;
   font-size: .9em;  
-  margin-top: .5em;
+  margin-top: .25em;
+  margin-left: -0.5em;
 }
 
 .commentLikes {
@@ -21,13 +22,13 @@
 .linebreak {
   clear: both;
   border-bottom: 1px solid #cccccc;
-  margin-left: 3em;
+  margin-left: 3.7em;
   padding: 0.2em 0em;
 }
 
 .heartCommentIcon {
   color: #cccccc;
-  margin-left: 31em;
+  margin-left: 29em;
   position: absolute;
   top: 17%;
   transform: translateY(-17%);

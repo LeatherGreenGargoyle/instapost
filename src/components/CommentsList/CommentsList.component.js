@@ -29,14 +29,15 @@ const CommentsList = ({ comments, handleCommentInput, handleCommentSubmit, input
       <div className="sendIcon">
         <FontAwesome name='paper-plane-o' size="2x" />
       </div>
-
-      <textarea
-        className="commentInputField"
-        type="text"
-        placeholder="Add a comment..."
-        onChange={handleCommentInput}
-        value={inputfieldValue}
-      />
+      <div className="commentInputContainer">
+        <textarea
+          className="commentInputField"
+          type="text"
+          placeholder="Add a comment..."
+          onChange={handleCommentInput}
+          value={inputfieldValue}
+        />
+      </div>
 
       <div
         className="postCommentButton"
